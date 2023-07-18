@@ -3,7 +3,7 @@ import Machine from './components/Machine';
 
 const App = () => {
   return (
-    <div>
+    <div className='app'>
       <Machine />
     </div>
   );

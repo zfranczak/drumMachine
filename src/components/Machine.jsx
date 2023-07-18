@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/machine.css';
 
 const Machine = () => {
   return (
