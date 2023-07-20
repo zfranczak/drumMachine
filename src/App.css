@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#drum-machine {
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(75, 134, 185);
+  padding: 10px;
+  border-radius: 15px;
+}

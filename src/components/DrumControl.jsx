@@ -1,8 +1,8 @@
 import React from 'react';
 
-const DrumControl = () => (
+const DrumControl = ({ changeSoundGroup }) => (
   <div className='control'>
-    <button>Changes Sound Group</button>
+    <button onClick={changeSoundGroup}>Change Sound Group</button>
   </div>
 );
 

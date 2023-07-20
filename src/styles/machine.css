@@ -7,10 +7,9 @@
   padding: 20px;
 }
 
-#display {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1000px;
-  gap: 10px;
+.keyboard {
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px;
+  grid-gap: 10px;
 }
