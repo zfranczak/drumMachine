@@ -10,6 +10,13 @@ body {
   margin: auto;
 }
 
+.control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;

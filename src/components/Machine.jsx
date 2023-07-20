@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import '../styles/machine.css';
 
-const KeyboardKey = ({ play, sound: { key, keyCode, url } }) => {
+const KeyboardKey = ({ play, sound: { id, key, keyCode, url } }) => {
   const handleKeydown = (e) => {
     if (e.keyCode === keyCode) {
-      play(key);
+      play(key, id);
     }
   };
 
@@ -16,7 +16,7 @@ const KeyboardKey = ({ play, sound: { key, keyCode, url } }) => {
   }, []);
 
   return (
-    <button className='drum-pad' onClick={() => play(key)}>
+    <button className='drum-pad' onClick={() => play(key, id)}>
       <audio className='clip' id={key} src={url} />
       {key}
     </button>
