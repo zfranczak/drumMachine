@@ -148,9 +148,11 @@ const App = () => {
 
   return (
     <div id='drum-machine'>
-      <div className='wrapper'>
-        <Machine play={play} sounds={sounds} />
-        <DrumControl changeSoundGroup={changeSoundGroup} />
+      <div id='display'>
+        <div className='wrapper'>
+          <Machine play={play} sounds={sounds} />
+          <DrumControl changeSoundGroup={changeSoundGroup} />
+        </div>
       </div>
     </div>
   );
