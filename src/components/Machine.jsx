@@ -16,7 +16,7 @@ const KeyboardKey = ({ play, sound: { id, key, keyCode, url } }) => {
   }, []);
 
   return (
-    <button className='drum-pad' onClick={() => play(key, id)}>
+    <button id={keyCode} className='drum-pad' onClick={() => play(key, id)}>
       <audio className='clip' id={key} src={url} />
       {key}
     </button>

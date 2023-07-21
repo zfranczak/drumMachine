@@ -165,16 +165,19 @@ const App = () => {
   };
 
   return (
-    <div id='drum-machine'>
-      {setKeyVolume()}
-      <div className='wrapper'>
-        <Machine play={play} sounds={sounds} />
-        <DrumControl
-          volume={volume}
-          handleVolumeChange={handleVolumeChange}
-          name={soundName || soundsName[soundType]}
-          changeSoundGroup={changeSoundGroup}
-        />
+    <div>
+      <h1>DRUM MACHINE</h1>
+      <div id='drum-machine'>
+        {setKeyVolume()}
+        <div className='wrapper'>
+          <Machine play={play} sounds={sounds} />
+          <DrumControl
+            volume={volume}
+            handleVolumeChange={handleVolumeChange}
+            name={soundName || soundsName[soundType]}
+            changeSoundGroup={changeSoundGroup}
+          />
+        </div>
       </div>
     </div>
   );
